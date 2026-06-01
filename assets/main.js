@@ -1,1 +1,0 @@
-document.addEventListener('DOMContentLoaded',()=>{const path=location.pathname.split('/').filter(Boolean).pop()||'home';document.querySelectorAll('[data-nav]').forEach(a=>{if(a.dataset.nav===path||a.dataset.nav==='home'&&location.pathname.endsWith('/'))a.classList.add('active')})});
