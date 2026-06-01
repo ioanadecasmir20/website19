@@ -380,4 +380,170 @@ body{
         font-size:42px;
     }
 }
+
+.training-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.training-panel{
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.06);
+    border-top:5px solid #0c3d91;
+}
+
+.training-panel span{
+    display:inline-block;
+    font-size:14px;
+    color:#0c3d91;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.training-panel h3{
+    font-size:24px;
+    margin-bottom:14px;
+}
+
+.training-panel p{
+    color:#555;
+}
+
+.training-feature{
+    background:#0e2447;
+    color:white;
+    padding:90px 0;
+}
+
+.training-feature-inner{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.training-feature h2{
+    font-size:44px;
+    line-height:1.1;
+}
+
+.training-feature p{
+    color:#d6deea;
+    margin-bottom:28px;
+}
+
+@media(max-width:900px){
+    .training-grid,
+    .training-feature-inner{
+        grid-template-columns:1fr;
+    }
+}
+
+.vacancies-layout{
+    display:grid;
+    grid-template-columns:1.4fr 0.8fr;
+    gap:50px;
+}
+
+.vacancy-item{
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    margin-bottom:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    border-left:5px solid #0c3d91;
+}
+
+.vacancy-item h3{
+    font-size:28px;
+    margin-bottom:12px;
+}
+
+.vacancy-item p{
+    margin-bottom:15px;
+    color:#555;
+}
+
+.vacancy-item span{
+    font-weight:600;
+    color:#0c3d91;
+}
+
+.apply-box{
+    background:#0e2447;
+    color:white;
+    padding:40px;
+    border-radius:14px;
+    position:sticky;
+    top:120px;
+}
+
+.apply-box h3{
+    font-size:32px;
+    margin-bottom:18px;
+}
+
+.apply-box a{
+    color:white;
+    font-weight:700;
+    text-decoration:none;
+    word-break:break-word;
+}
+
+.apply-box hr{
+    border:none;
+    height:1px;
+    background:rgba(255,255,255,0.2);
+    margin:25px 0;
+}
+
+.apply-box ul{
+    padding-left:20px;
+}
+
+.apply-box li{
+    margin-bottom:10px;
+}
+
+.dark-band{
+    background:#111827;
+    color:white;
+    padding:70px 0;
+}
+
+.dark-band-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+}
+
+.dark-band h2{
+    font-size:42px;
+    margin-bottom:12px;
+}
+
+.dark-band p{
+    color:#c4cedb;
+}
+
+@media(max-width:950px){
+
+    .vacancies-layout{
+        grid-template-columns:1fr;
+    }
+
+    .dark-band-inner{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .apply-box{
+        position:relative;
+        top:auto;
+    }
+}
 ```
